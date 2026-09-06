@@ -1,475 +1,456 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="zh-TW" class="scroll-smooth">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="1504.84">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'PingFang TC'}
-    span.s1 {font: 12.0px 'PingFang TC'}
-    span.s2 {font: 12.0px Helvetica}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>周紹宸 & 吳宜靜 婚禮邀請函</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cormorant Garamond & Noto Serif TC -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            morandi: {
+              primary: '#D4B5B0',
+              secondary: '#E0C8C6',
+              dark: '#5C4E4B',
+              text: '#4A4240',
+              accent: '#8C6D68',
+              bg: '#FAF6F5',
+              card: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            serif: ['Noto Serif TC', 'serif'],
+            en: ['Cormorant Garamond', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Noto Serif TC', serif;
+      background-color: #FAF6F5;
+      color: #4A4240;
+      word-break: break-word;
+      overflow-x: hidden;
+    }
+
+    .font-en {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    /* 毛玻璃質感導航列 */
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(224, 200, 198, 0.45);
+    }
+
+    /* 精緻 V-Card 垂直卡片立體陰影與漸層邊框 */
+    .v-card-style {
+      background: #FFFFFF;
+      box-shadow: 0 20px 40px -15px rgba(212, 181, 176, 0.25), 0 0 15px 0 rgba(0, 0, 0, 0.02);
+      border: 1px solid rgba(224, 200, 198, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .v-card-style:hover {
+      box-shadow: 0 25px 45px -12px rgba(212, 181, 176, 0.35), 0 0 20px 0 rgba(0, 0, 0, 0.03);
+    }
+
+    /* 自訂選擇框下拉箭頭樣式 */
+    select {
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%208C6D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1.1em;
+    }
+
+    /* 動態淡入效果 */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade-in {
+      animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
   </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="zh-TW" class="scroll-smooth"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;<span class="s1">周紹宸</span> &amp; <span class="s1">吳宜靜</span> <span class="s1">婚禮邀請函</span>&lt;/title&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Tailwind CSS CDN --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Google Fonts: Cormorant Garamond &amp; Noto Serif TC --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&amp;family=Noto+Serif+TC:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- FontAwesome Icons --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>tailwind.config = {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>theme: {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>extend: {</p>
-<p class="p1"><span class="Apple-converted-space">          </span>colors: {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>morandi: {</p>
-<p class="p1"><span class="Apple-converted-space">              </span>primary: '#D4B5B0',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>secondary: '#E0C8C6',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>dark: '#5C4E4B',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>text: '#4A4240',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>accent: '#8C6D68',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>bg: '#FAF6F5',</p>
-<p class="p1"><span class="Apple-converted-space">              </span>card: '#FFFFFF',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">          </span>},</p>
-<p class="p1"><span class="Apple-converted-space">          </span>fontFamily: {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>serif: ['Noto Serif TC', 'serif'],</p>
-<p class="p1"><span class="Apple-converted-space">            </span>en: ['Cormorant Garamond', 'serif']</p>
-<p class="p1"><span class="Apple-converted-space">          </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Noto Serif TC', serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #FAF6F5;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #4A4240;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>word-break: break-word;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>overflow-x: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.font-en {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Cormorant Garamond', serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* <span class="s1">毛玻璃質感導航列</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.glass-nav {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: rgba(255, 255, 255, 0.78);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>backdrop-filter: blur(16px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>-webkit-backdrop-filter: blur(16px);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid rgba(224, 200, 198, 0.45);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* <span class="s1">精緻</span> V-Card <span class="s1">垂直卡片立體陰影與漸層邊框</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.v-card-style {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #FFFFFF;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 20px 40px -15px rgba(212, 181, 176, 0.25), 0 0 15px 0 rgba(0, 0, 0, 0.02);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid rgba(224, 200, 198, 0.5);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: transform 0.3s ease, box-shadow 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.v-card-style:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 25px 45px -12px rgba(212, 181, 176, 0.35), 0 0 20px 0 rgba(0, 0, 0, 0.03);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>/* </span>自訂選擇框下拉箭頭樣式<span class="s2"> */</span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>select {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%208C6D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-repeat: no-repeat;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-position: right 1rem center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-size: 1.1em;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* <span class="s1">動態淡入效果</span> */</p>
-<p class="p1"><span class="Apple-converted-space">    </span>@keyframes fadeIn {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>from { opacity: 0; transform: translateY(10px); }</p>
-<p class="p1"><span class="Apple-converted-space">      </span>to { opacity: 1; transform: translateY(0); }</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.animate-fade-in {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>animation: fadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="antialiased selection:bg-[#E0C8C6] selection:text-[#4A4240]"&gt;</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">  </span>&lt;!-- </span>頂端固定的毛玻璃質感導航列<span class="s2"> --&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">新人簡稱標誌</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#" class="font-en text-xl sm:text-2xl font-semibold tracking-widest text-morandi-dark hover:text-morandi-accent transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>Z &amp; W</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">導覽連結</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;nav class="flex items-center space-x-3 sm:space-x-8 text-xs sm:text-sm font-medium tracking-wider"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#about" class="text-morandi-text hover:text-morandi-accent transition-colors py-1 relative group whitespace-nowrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span><span class="s1">關於我們</span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="absolute bottom-0 left-0 w-0 h-0.5 bg-morandi-primary transition-all duration-300 group-hover:w-full"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#details" class="text-morandi-text hover:text-morandi-accent transition-colors py-1 relative group whitespace-nowrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span><span class="s1">婚禮詳情</span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="absolute bottom-0 left-0 w-0 h-0.5 bg-morandi-primary transition-all duration-300 group-hover:w-full"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;a href="#rsvp" class="bg-morandi-primary/90 text-white px-3 sm:px-4 py-1.5 rounded-full hover:bg-morandi-accent transition-all duration-300 shadow-sm whitespace-nowrap"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span><span class="s1">出席回函</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/nav&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- <span class="s1">首頁全螢幕無字封面區塊</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;section class="relative w-full h-screen flex items-center justify-center overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">背景大圖</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="absolute inset-0 z-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="https://i.postimg.cc/QMKd1dyB/IMG-7097.jpg" alt="<span class="s1">婚禮封面大圖</span>" class="w-full h-full object-cover object-center scale-105 filter brightness-[0.96] contrast-[0.98]"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- <span class="s1">向下滾動引導箭頭（無文字）</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="absolute bottom-8 left-0 w-full z-10 text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="#about" class="inline-block text-white/80 hover:text-white transition-colors animate-bounce p-2" aria-label="<span class="s1">向下滾動觀看內容</span>"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fa-solid fa-chevron-down text-2xl drop-shadow-md"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- <span class="s1">主內容區域：垂直</span> V-Card <span class="s1">向量名片感設計</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="max-w-xl mx-auto px-4 py-16 sm:py-24 space-y-12 sm:space-y-16"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- V-Card 1: <span class="s1">關於我們</span> ABOUT US --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="v-card-style rounded-2xl p-6 sm:p-10 text-center relative overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">頂部莫蘭迪雙色線條</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="mb-6 pt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1"&gt;About Us&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark"&gt;<span class="s1">關於我們</span>&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">文字內容</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="text-morandi-text text-base sm:text-lg leading-relaxed sm:leading-loose space-y-3 font-light"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-xl sm:text-2xl font-serif text-morandi-accent font-medium mb-4"&gt;<span class="s1">嗨，大家</span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-lg sm:text-xl text-morandi-dark font-medium"&gt;<span class="s1">我們結婚啦～</span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="pt-2 text-sm sm:text-base leading-7"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span><span class="s1">邀請你出席我們的婚禮</span>&lt;br&gt;</p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">          </span></span>與我們共同見證幸福，分享快樂</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="mt-8 pt-6 border-t border-morandi-secondary/30 flex justify-center items-center space-x-2 text-morandi-primary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fa-solid fa-heart text-xs opacity-70"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fa-solid fa-heart text-xs opacity-70"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- V-Card 2: <span class="s1">婚禮詳情</span> DETAILS --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="details" class="v-card-style rounded-2xl p-6 sm:p-10 relative overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="text-center mb-8 pt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1"&gt;Wedding Details&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark"&gt;<span class="s1">婚禮詳情</span>&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="divide-y divide-morandi-secondary/40"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s1">資訊項目</span> 1: <span class="s1">新人</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex items-center space-x-4 py-4 px-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="w-10 h-10 rounded-full bg-morandi-primary/15 flex items-center justify-center text-morandi-accent shrink-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;i class="fa-solid fa-heart text-base"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="block text-xs font-en tracking-wider text-morandi-accent uppercase"&gt;Couple&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-base sm:text-lg font-medium text-morandi-dark"&gt;<span class="s1">周紹宸</span> &lt;span class="text-morandi-primary mx-1"&gt;&amp;&lt;/span&gt; <span class="s1">吳宜靜</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s1">資訊項目</span> 2: <span class="s1">時間</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="flex items-center space-x-4 py-4 px-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="w-10 h-10 rounded-full bg-morandi-primary/15 flex items-center justify-center text-morandi-accent shrink-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;i class="fa-regular fa-calendar-check text-base"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="block text-xs font-en tracking-wider text-morandi-accent uppercase"&gt;Date &amp; Time&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-base sm:text-lg font-medium text-morandi-dark block"&gt;<span class="s1">民國</span> 115 <span class="s1">年</span> 11 <span class="s1">月</span> 28 <span class="s1">日</span> <span class="s1">上午</span> 10:00&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-xs sm:text-sm text-morandi-text/80 font-en mt-0.5 block"&gt;Saturday, November 28, 2026 at 10:00 AM&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- V-Card 3: <span class="s1">出席回函</span> (<span class="s1">表單置底區塊</span>) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="rsvp" class="v-card-style rounded-2xl p-6 sm:p-10 relative overflow-hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"&gt;&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="text-center mb-8 pt-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1"&gt;Attendance Form&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark"&gt;<span class="s1">出席回函</span>&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p class="text-xs text-morandi-text/70 mt-2"&gt;<span class="s1">請於收到邀請後協助填寫回函，方便我們為您準備席位</span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">隱藏式</span> Iframe <span class="s1">提交技術</span> (<span class="s1">無刷新送出</span>) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;iframe name="hidden_iframe" id="hidden_iframe" class="hidden"&gt;&lt;/iframe&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- <span class="s1">表單</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;form action="https://docs.google.com/forms/d/e/1FAIpQLScbxB4bm5Mu0r2U6fKHlh8VBwGlCiDuMiWP0FgA0dVO8XYE0w/formResponse" method="POST" target="hidden_iframe" id="wedding-rsvp-form" onsubmit="onFormSubmit()" class="space-y-6"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s1">欄位</span> 1: <span class="s1">姓名</span> NAME --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label for="entry_1751102198" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s1">姓名</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;NAME&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-xs text-rose-400"&gt;*<span class="s1">必填</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;input<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>type="text"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>id="entry_1751102198"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>name="entry.1751102198"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>required</p>
-<p class="p1"><span class="Apple-converted-space">            </span>placeholder="<span class="s1">請輸入您的真實姓名</span>"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s1">欄位</span> 2: <span class="s1">是否出席</span> ATTENDANCE --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label for="entry_1452744653" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;<span class="s1">是否出席</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;ATTENDANCE&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-xs text-rose-400"&gt;*<span class="s1">必填</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;select<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>id="entry_1452744653"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>name="entry.1452744653"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>required<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>onchange="handleAttendanceChange(this.value)"</p>
-<p class="p1"><span class="Apple-converted-space">            </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="" disabled selected&gt;<span class="s1">請選擇出席狀態</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="<span class="s1">絕對出席，參與你們生命中重要的時刻</span>"&gt;<span class="s1">絕對出席，參與你們生命中重要的時刻</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;option value="<span class="s1">無法出席，在這裡給你們祝福</span>"&gt;<span class="s1">無法出席，在這裡給你們祝福</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span>&lt;!-- </span>條件式動態顯示欄位容器（僅當選擇「絕對出席<span class="s2">...</span>」時展開）<span class="s2"> --&gt;</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="conditional-fields" class="space-y-6 hidden border-l-2 border-morandi-primary/50 pl-4 my-2 transition-all duration-300"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- <span class="s1">欄位</span> 3: <span class="s1">出席人數</span> NUMBER OF GUESTS (<span class="s1">下拉式選單</span>) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="entry_322241103" class="block text-sm font-medium text-morandi-dark mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span><span class="s1">出席人數</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;NUMBER OF GUESTS&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>id="entry_322241103"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>name="entry.322241103"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="" disabled selected&gt;<span class="s1">請選擇出席人數（包含您自己）</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="1"&gt;1 <span class="s1">位</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="2"&gt;2 <span class="s1">位</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="3"&gt;3 <span class="s1">位</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="4"&gt;4 <span class="s1">位</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="5"&gt;5 <span class="s1">位</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- <span class="s1">欄位</span> 4: <span class="s1">共同出席者姓名</span> COMPANION NAMES --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="entry_2046862057" class="block text-sm font-medium text-morandi-dark mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span><span class="s1">共同出席者姓名</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;COMPANION NAMES&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>type="text"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>id="entry_2046862057"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>name="entry.2046862057"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>placeholder="<span class="s1">若有攜伴，請填寫伴侶</span>/<span class="s1">家人姓名</span>"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- <span class="s1">欄位</span> 5: <span class="s1">是否需要喜帖</span> INVITATION --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="entry_135469609" class="block text-sm font-medium text-morandi-dark mb-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span><span class="s1">是否需要喜帖</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;INVITATION&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>id="entry_135469609"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>name="entry.135469609"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>onchange="handleInvitationChange(this.value)"</p>
-<p class="p1"><span class="Apple-converted-space">              </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="" disabled selected&gt;<span class="s1">請選擇喜帖需求</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="<span class="s1">我想要紙本喜帖留作紀念</span>"&gt;<span class="s1">我想要紙本喜帖留作紀念</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="<span class="s1">我想要電子喜帖</span>"&gt;<span class="s1">我想要電子喜帖</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="<span class="s1">小朋友才做選擇我兩個都想要</span>"&gt;<span class="s1">小朋友才做選擇我兩個都想要</span>&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;!-- <span class="s1">欄位</span> 6: <span class="s1">喜帖寄送地址</span> ADDRESS<span class="s1">（僅當選擇需要紙本喜帖時顯示）</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div id="address-field" class="hidden transition-all duration-300"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label for="entry_1856739771" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span&gt;<span class="s1">喜帖寄送地址</span> &lt;span class="font-en text-xs text-morandi-accent ml-1 uppercase"&gt;ADDRESS&lt;/span&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;span class="text-xs text-rose-400"&gt;*<span class="s1">必填</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;input<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>type="text"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>id="entry_1856739771"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>name="entry.1856739771"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>placeholder="<span class="s1">請輸入郵遞區號與詳細寄送地址</span>"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">              </span>class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- <span class="s1">提交按鈕</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>type="submit"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>id="submit-button"</p>
-<p class="p1"><span class="Apple-converted-space">          </span>class="w-full py-3.5 px-6 rounded-xl bg-morandi-primary hover:bg-morandi-accent text-white font-medium tracking-widest text-base shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 mt-8 active:scale-[0.99]"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;i class="fa-regular fa-paper-plane text-sm"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span&gt;<span class="s1">確認送出</span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/button&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- <span class="s1">頁尾</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="text-center py-8 text-xs text-morandi-accent/80 border-t border-morandi-secondary/30"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="font-en tracking-widest uppercase"&gt;Shao-Chen &amp; Yi-Ching Wedding Invitation&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p class="mt-1 font-light"&gt;<span class="s1">期待在</span> 115.11.28 <span class="s1">與您相見</span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- <span class="s1">自訂成功提示</span> Modal <span class="s1">彈窗</span> --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300 px-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center shadow-2xl border border-morandi-secondary transform scale-95 transition-all duration-300 id-modal-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="w-16 h-16 bg-morandi-bg rounded-full flex items-center justify-center mx-auto mb-4 text-morandi-primary text-2xl border border-morandi-secondary/50"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;i class="fa-solid fa-heart"&gt;&lt;/i&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;h3 class="text-xl font-medium text-morandi-dark mb-2"&gt;<span class="s1">完成回覆！</span>&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;p class="text-sm text-morandi-text/90 leading-relaxed mb-6"&gt;</p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span>非常感謝您的回覆！<span class="s2">&lt;br&gt;</span>我們已收到您的訊息，期待與您共同分享這份美好的喜悅。</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>onclick="closeSuccessModal()"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>class="w-full py-2.5 px-4 bg-morandi-primary hover:bg-morandi-accent text-white font-medium rounded-xl text-sm transition-colors tracking-wider"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span><span class="s1">關閉視窗</span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>let formSubmitted = false;</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>// </span>智能表單邏輯：出席狀態改變時切換顯示項目</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function handleAttendanceChange(selectedValue) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const conditionalFields = document.getElementById('conditional-fields');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const countSelect = document.getElementById('entry_322241103');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const companionInput = document.getElementById('entry_2046862057');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const invitationSelect = document.getElementById('entry_135469609');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (selectedValue === '<span class="s1">絕對出席，參與你們生命中重要的時刻</span>') {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>conditionalFields.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>conditionalFields.classList.add('animate-fade-in');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>countSelect.setAttribute('required', 'required');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>conditionalFields.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>conditionalFields.classList.remove('animate-fade-in');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>countSelect.removeAttribute('required');</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">清空隱藏項目的輸入值</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>countSelect.value = '';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>companionInput.value = '';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>invitationSelect.value = '';</p>
-<p class="p1"><span class="Apple-converted-space">        </span>handleInvitationChange(''); // <span class="s1">同步隱藏並清空地址</span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>// </span>智能喜帖邏輯：根據選擇是否展開寄送地址</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function handleInvitationChange(selectedValue) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const addressField = document.getElementById('address-field');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const addressInput = document.getElementById('entry_1856739771');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (selectedValue === '<span class="s1">我想要紙本喜帖留作紀念</span>' || selectedValue === '<span class="s1">小朋友才做選擇我兩個都想要</span>') {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressField.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressField.classList.add('animate-fade-in');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressInput.setAttribute('required', 'required');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressField.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressField.classList.remove('animate-fade-in');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressInput.removeAttribute('required');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>addressInput.value = '';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>// </span>表單提交觸發標記</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function onFormSubmit() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>formSubmitted = true;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const btn = document.getElementById('submit-button');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>btn.disabled = true;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>btn.innerHTML = `&lt;i class="fa-solid fa-circle-notch fa-spin text-sm"&gt;&lt;/i&gt;&lt;span&gt;<span class="s1">傳送中</span>...&lt;/span&gt;`;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Iframe <span class="s1">載入完成時處理成功響應</span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function handleIframeLoad() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (formSubmitted) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>showSuccessModal();</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">重設表單狀態</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const form = document.getElementById('wedding-rsvp-form');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>form.reset();</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// <span class="s1">重置按鈕與條件欄位</span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>const btn = document.getElementById('submit-button');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>btn.disabled = false;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>btn.innerHTML = `&lt;i class="fa-regular fa-paper-plane text-sm"&gt;&lt;/i&gt;&lt;span&gt;<span class="s1">確認送出</span>&lt;/span&gt;`;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>handleAttendanceChange('');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>formSubmitted = false;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// <span class="s1">顯示自訂成功</span> Modal</p>
-<p class="p1"><span class="Apple-converted-space">    </span>function showSuccessModal() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const modal = document.getElementById('success-modal');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const content = modal.querySelector('.id-modal-content');</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.classList.remove('opacity-0', 'pointer-events-none');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>content.classList.remove('scale-95');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>content.classList.add('scale-100');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>// <span class="s1">關閉</span> Modal</p>
-<p class="p1"><span class="Apple-converted-space">    </span>closeSuccessModal = function() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const modal = document.getElementById('success-modal');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const content = modal.querySelector('.id-modal-content');</p>
-<p class="p2"><span class="Apple-converted-space">      </span></p>
-<p class="p1"><span class="Apple-converted-space">      </span>content.classList.remove('scale-100');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>content.classList.add('scale-95');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>modal.classList.add('opacity-0', 'pointer-events-none');</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span>// </span>頁面載入完成初始化</p>
-<p class="p1"><span class="Apple-converted-space">    </span>window.onload = function() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const iframe = document.getElementById('hidden_iframe');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>if (iframe) {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>iframe.addEventListener('load', handleIframeLoad);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>};</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="antialiased selection:bg-[#E0C8C6] selection:text-[#4A4240]">
+
+  <!-- 頂端固定的毛玻璃質感導航列 -->
+  <header class="fixed top-0 left-0 w-full z-50 glass-nav transition-all duration-300">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <!-- 新人簡稱標誌 -->
+      <a href="#" class="font-en text-xl sm:text-2xl font-semibold tracking-widest text-morandi-dark hover:text-morandi-accent transition-colors">
+        Z & W
+      </a>
+
+      <!-- 導覽連結 -->
+      <nav class="flex items-center space-x-3 sm:space-x-8 text-xs sm:text-sm font-medium tracking-wider">
+        <a href="#about" class="text-morandi-text hover:text-morandi-accent transition-colors py-1 relative group whitespace-nowrap">
+          關於我們
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-morandi-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#details" class="text-morandi-text hover:text-morandi-accent transition-colors py-1 relative group whitespace-nowrap">
+          婚禮詳情
+          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-morandi-primary transition-all duration-300 group-hover:w-full"></span>
+        </a>
+        <a href="#rsvp" class="bg-morandi-primary/90 text-white px-3 sm:px-4 py-1.5 rounded-full hover:bg-morandi-accent transition-all duration-300 shadow-sm whitespace-nowrap">
+          出席回函
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 首頁全螢幕無字封面區塊 -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <!-- 背景大圖 -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://i.postimg.cc/QMKd1dyB/IMG-7097.jpg" alt="婚禮封面大圖" class="w-full h-full object-cover object-center scale-105 filter brightness-[0.96] contrast-[0.98]">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/15 via-transparent to-black/35"></div>
+    </div>
+
+    <!-- 向下滾動引導箭頭（無文字） -->
+    <div class="absolute bottom-8 left-0 w-full z-10 text-center">
+      <a href="#about" class="inline-block text-white/80 hover:text-white transition-colors animate-bounce p-2" aria-label="向下滾動觀看內容">
+        <i class="fa-solid fa-chevron-down text-2xl drop-shadow-md"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- 主內容區域：垂直 V-Card 向量名片感設計 -->
+  <main class="max-w-xl mx-auto px-4 py-16 sm:py-24 space-y-12 sm:space-y-16">
+
+    <!-- V-Card 1: 關於我們 ABOUT US -->
+    <section id="about" class="v-card-style rounded-2xl p-6 sm:p-10 text-center relative overflow-hidden">
+      <!-- 頂部莫蘭迪雙色線條 -->
+      <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"></div>
+      
+      <div class="mb-6 pt-2">
+        <span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1">About Us</span>
+        <h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark">關於我們</h2>
+      </div>
+
+      <!-- 文字內容 -->
+      <div class="text-morandi-text text-base sm:text-lg leading-relaxed sm:leading-loose space-y-3 font-light">
+        <p class="text-xl sm:text-2xl font-serif text-morandi-accent font-medium mb-4">嗨，大家</p>
+        <p class="text-lg sm:text-xl text-morandi-dark font-medium">我們結婚啦～</p>
+        <p class="pt-2 text-sm sm:text-base leading-7">
+          邀請你出席我們的婚禮<br>
+          與我們共同見證幸福，分享快樂
+        </p>
+      </div>
+
+      <div class="mt-8 pt-6 border-t border-morandi-secondary/30 flex justify-center items-center space-x-2 text-morandi-primary">
+        <i class="fa-solid fa-heart text-xs opacity-70"></i>
+        <i class="fa-solid fa-heart text-xs opacity-70"></i>
+      </div>
+    </section>
+
+    <!-- V-Card 2: 婚禮詳情 DETAILS -->
+    <section id="details" class="v-card-style rounded-2xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"></div>
+
+      <div class="text-center mb-8 pt-2">
+        <span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1">Wedding Details</span>
+        <h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark">婚禮詳情</h2>
+      </div>
+
+      <div class="divide-y divide-morandi-secondary/40">
+        <!-- 資訊項目 1: 新人 -->
+        <div class="flex items-center space-x-4 py-4 px-2">
+          <div class="w-10 h-10 rounded-full bg-morandi-primary/15 flex items-center justify-center text-morandi-accent shrink-0">
+            <i class="fa-solid fa-heart text-base"></i>
+          </div>
+          <div>
+            <span class="block text-xs font-en tracking-wider text-morandi-accent uppercase">Couple</span>
+            <span class="text-base sm:text-lg font-medium text-morandi-dark">周紹宸 <span class="text-morandi-primary mx-1">&</span> 吳宜靜</span>
+          </div>
+        </div>
+
+        <!-- 資訊項目 2: 時間 -->
+        <div class="flex items-center space-x-4 py-4 px-2">
+          <div class="w-10 h-10 rounded-full bg-morandi-primary/15 flex items-center justify-center text-morandi-accent shrink-0">
+            <i class="fa-regular fa-calendar-check text-base"></i>
+          </div>
+          <div>
+            <span class="block text-xs font-en tracking-wider text-morandi-accent uppercase">Date & Time</span>
+            <span class="text-base sm:text-lg font-medium text-morandi-dark block">民國 115 年 11 月 28 日 上午 10:00</span>
+            <span class="text-xs sm:text-sm text-morandi-text/80 font-en mt-0.5 block">Saturday, November 28, 2026 at 10:00 AM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- V-Card 3: 出席回函 (表單置底區塊) -->
+    <section id="rsvp" class="v-card-style rounded-2xl p-6 sm:p-10 relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-morandi-secondary via-morandi-primary to-morandi-secondary"></div>
+
+      <div class="text-center mb-8 pt-2">
+        <span class="font-en text-xs sm:text-sm tracking-[0.35em] uppercase text-morandi-accent block mb-1">Attendance Form</span>
+        <h2 class="text-2xl sm:text-3xl font-medium tracking-widest text-morandi-dark">出席回函</h2>
+        <p class="text-xs text-morandi-text/70 mt-2">請於收到邀請後協助填寫回函，方便我們為您準備席位</p>
+      </div>
+
+      <!-- 隱藏式 Iframe 提交技術 (無刷新送出) -->
+      <iframe name="hidden_iframe" id="hidden_iframe" class="hidden"></iframe>
+
+      <!-- 表單 -->
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLScbxB4bm5Mu0r2U6fKHlh8VBwGlCiDuMiWP0FgA0dVO8XYE0w/formResponse" method="POST" target="hidden_iframe" id="wedding-rsvp-form" onsubmit="onFormSubmit()" class="space-y-6">
+
+        <!-- 欄位 1: 姓名 NAME -->
+        <div>
+          <label for="entry_1751102198" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between">
+            <span>姓名 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">NAME</span></span>
+            <span class="text-xs text-rose-400">*必填</span>
+          </label>
+          <input 
+            type="text" 
+            id="entry_1751102198" 
+            name="entry.1751102198" 
+            required
+            placeholder="請輸入您的真實姓名" 
+            class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40">
+        </div>
+
+        <!-- 欄位 2: 是否出席 ATTENDANCE -->
+        <div>
+          <label for="entry_1452744653" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between">
+            <span>是否出席 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">ATTENDANCE</span></span>
+            <span class="text-xs text-rose-400">*必填</span>
+          </label>
+          <select 
+            id="entry_1452744653" 
+            name="entry.1452744653" 
+            required 
+            onchange="handleAttendanceChange(this.value)"
+            class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer">
+            <option value="" disabled selected>請選擇出席狀態</option>
+            <option value="絕對出席，參與你們生命中重要的時刻">絕對出席，參與你們生命中重要的時刻</option>
+            <option value="無法出席，在這裡給你們祝福">無法出席，在這裡給你們祝福</option>
+          </select>
+        </div>
+
+        <!-- 條件式動態顯示欄位容器（僅當選擇「絕對出席...」時展開） -->
+        <div id="conditional-fields" class="space-y-6 hidden border-l-2 border-morandi-primary/50 pl-4 my-2 transition-all duration-300">
+          
+          <!-- 欄位 3: 出席人數 NUMBER OF GUESTS (下拉式選單) -->
+          <div>
+            <label for="entry_322241103" class="block text-sm font-medium text-morandi-dark mb-2">
+              出席人數 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">NUMBER OF GUESTS</span>
+            </label>
+            <select 
+              id="entry_322241103" 
+              name="entry.322241103" 
+              class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer">
+              <option value="" disabled selected>請選擇出席人數（包含您自己）</option>
+              <option value="1">1 位</option>
+              <option value="2">2 位</option>
+              <option value="3">3 位</option>
+              <option value="4">4 位</option>
+              <option value="5">5 位</option>
+            </select>
+          </div>
+
+          <!-- 欄位 4: 共同出席者姓名 COMPANION NAMES -->
+          <div>
+            <label for="entry_2046862057" class="block text-sm font-medium text-morandi-dark mb-2">
+              共同出席者姓名 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">COMPANION NAMES</span>
+            </label>
+            <input 
+              type="text" 
+              id="entry_2046862057" 
+              name="entry.2046862057" 
+              placeholder="若有攜伴，請填寫伴侶/家人姓名" 
+              class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40">
+          </div>
+
+          <!-- 欄位 5: 是否需要喜帖 INVITATION -->
+          <div>
+            <label for="entry_135469609" class="block text-sm font-medium text-morandi-dark mb-2">
+              是否需要喜帖 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">INVITATION</span>
+            </label>
+            <select 
+              id="entry_135469609" 
+              name="entry.135469609" 
+              onchange="handleInvitationChange(this.value)"
+              class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base appearance-none cursor-pointer">
+              <option value="" disabled selected>請選擇喜帖需求</option>
+              <option value="我想要紙本喜帖留作紀念">我想要紙本喜帖留作紀念</option>
+              <option value="我想要電子喜帖">我想要電子喜帖</option>
+              <option value="小朋友才做選擇我兩個都想要">小朋友才做選擇我兩個都想要</option>
+            </select>
+          </div>
+
+          <!-- 欄位 6: 喜帖寄送地址 ADDRESS（僅當選擇需要紙本喜帖時顯示） -->
+          <div id="address-field" class="hidden transition-all duration-300">
+            <label for="entry_1856739771" class="block text-sm font-medium text-morandi-dark mb-2 flex items-center justify-between">
+              <span>喜帖寄送地址 <span class="font-en text-xs text-morandi-accent ml-1 uppercase">ADDRESS</span></span>
+              <span class="text-xs text-rose-400">*必填</span>
+            </label>
+            <input 
+              type="text" 
+              id="entry_1856739771" 
+              name="entry.1856739771" 
+              placeholder="請輸入郵遞區號與詳細寄送地址" 
+              class="w-full px-4 py-3 rounded-xl bg-morandi-bg/80 border border-morandi-secondary/60 text-morandi-dark focus:outline-none focus:ring-2 focus:ring-morandi-primary/50 focus:border-morandi-primary transition-all text-sm sm:text-base placeholder:text-morandi-text/40">
+          </div>
+
+        </div>
+
+        <!-- 提交按鈕 -->
+        <button 
+          type="submit" 
+          id="submit-button"
+          class="w-full py-3.5 px-6 rounded-xl bg-morandi-primary hover:bg-morandi-accent text-white font-medium tracking-widest text-base shadow-md hover:shadow-lg transition-all duration-300 flex items-center justify-center space-x-2 mt-8 active:scale-[0.99]">
+          <i class="fa-regular fa-paper-plane text-sm"></i>
+          <span>確認送出</span>
+        </button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="text-center py-8 text-xs text-morandi-accent/80 border-t border-morandi-secondary/30">
+    <p class="font-en tracking-widest uppercase">Shao-Chen & Yi-Ching Wedding Invitation</p>
+    <p class="mt-1 font-light">期待在 115.11.28 與您相見</p>
+  </footer>
+
+  <!-- 自訂成功提示 Modal 彈窗 -->
+  <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300 px-4">
+    <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-sm w-full text-center shadow-2xl border border-morandi-secondary transform scale-95 transition-all duration-300 id-modal-content">
+      <div class="w-16 h-16 bg-morandi-bg rounded-full flex items-center justify-center mx-auto mb-4 text-morandi-primary text-2xl border border-morandi-secondary/50">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      <h3 class="text-xl font-medium text-morandi-dark mb-2">完成回覆！</h3>
+      <p class="text-sm text-morandi-text/90 leading-relaxed mb-6">
+        非常感謝您的回覆！<br>我們已收到您的訊息，期待與您共同分享這份美好的喜悅。
+      </p>
+      <button 
+        onclick="closeSuccessModal()" 
+        class="w-full py-2.5 px-4 bg-morandi-primary hover:bg-morandi-accent text-white font-medium rounded-xl text-sm transition-colors tracking-wider">
+        關閉視窗
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let formSubmitted = false;
+
+    // 智能表單邏輯：出席狀態改變時切換顯示項目
+    function handleAttendanceChange(selectedValue) {
+      const conditionalFields = document.getElementById('conditional-fields');
+      const countSelect = document.getElementById('entry_322241103');
+      const companionInput = document.getElementById('entry_2046862057');
+      const invitationSelect = document.getElementById('entry_135469609');
+
+      if (selectedValue === '絕對出席，參與你們生命中重要的時刻') {
+        conditionalFields.classList.remove('hidden');
+        conditionalFields.classList.add('animate-fade-in');
+        countSelect.setAttribute('required', 'required');
+      } else {
+        conditionalFields.classList.add('hidden');
+        conditionalFields.classList.remove('animate-fade-in');
+        countSelect.removeAttribute('required');
+        
+        // 清空隱藏項目的輸入值
+        countSelect.value = '';
+        companionInput.value = '';
+        invitationSelect.value = '';
+        handleInvitationChange(''); // 同步隱藏並清空地址
+      }
+    }
+
+    // 智能喜帖邏輯：根據選擇是否展開寄送地址
+    function handleInvitationChange(selectedValue) {
+      const addressField = document.getElementById('address-field');
+      const addressInput = document.getElementById('entry_1856739771');
+
+      if (selectedValue === '我想要紙本喜帖留作紀念' || selectedValue === '小朋友才做選擇我兩個都想要') {
+        addressField.classList.remove('hidden');
+        addressField.classList.add('animate-fade-in');
+        addressInput.setAttribute('required', 'required');
+      } else {
+        addressField.classList.add('hidden');
+        addressField.classList.remove('animate-fade-in');
+        addressInput.removeAttribute('required');
+        addressInput.value = '';
+      }
+    }
+
+    // 表單提交觸發標記
+    function onFormSubmit() {
+      formSubmitted = true;
+      const btn = document.getElementById('submit-button');
+      btn.disabled = true;
+      btn.innerHTML = `<i class="fa-solid fa-circle-notch fa-spin text-sm"></i><span>傳送中...</span>`;
+    }
+
+    // Iframe 載入完成時處理成功響應
+    function handleIframeLoad() {
+      if (formSubmitted) {
+        showSuccessModal();
+        
+        // 重設表單狀態
+        const form = document.getElementById('wedding-rsvp-form');
+        form.reset();
+        
+        // 重置按鈕與條件欄位
+        const btn = document.getElementById('submit-button');
+        btn.disabled = false;
+        btn.innerHTML = `<i class="fa-regular fa-paper-plane text-sm"></i><span>確認送出</span>`;
+        
+        handleAttendanceChange('');
+        formSubmitted = false;
+      }
+    }
+
+    // 顯示自訂成功 Modal
+    function showSuccessModal() {
+      const modal = document.getElementById('success-modal');
+      const content = modal.querySelector('.id-modal-content');
+      
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+    }
+
+    // 關閉 Modal
+    closeSuccessModal = function() {
+      const modal = document.getElementById('success-modal');
+      const content = modal.querySelector('.id-modal-content');
+      
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    // 頁面載入完成初始化
+    window.onload = function() {
+      const iframe = document.getElementById('hidden_iframe');
+      if (iframe) {
+        iframe.addEventListener('load', handleIframeLoad);
+      }
+    };
+  </script>
 </body>
 </html>
